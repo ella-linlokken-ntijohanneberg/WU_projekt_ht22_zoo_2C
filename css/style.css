@@ -7,11 +7,12 @@
 #grid_wrapper {
     display: grid;
     height: 100vh;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: minmax(100px, 1fr) minmax(250px, 2fr) minmax(430px, 3fr) minmax(180px, 2fr);
     grid-template-areas: 
     "he he"
     "s1 s2"
+    "s3 s2"
     "fo fo";
 }
 
@@ -34,12 +35,17 @@ nav {
 
 #section_1 {
     grid-area: s1;
-    background: red;
+    background: rgb(146, 194, 224);
 }
 
 #section_2 {
     grid-area: s2;
-    background: blue;
+    background: rgb(122, 122, 151);
+}
+
+#section_3 {
+    grid-area: s3;
+    background: rgb(190, 189, 204);
 }
 
 footer {
