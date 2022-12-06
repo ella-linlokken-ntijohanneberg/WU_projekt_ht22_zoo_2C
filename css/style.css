@@ -14,6 +14,7 @@
     "s1 s2"
     "s3 s2"
     "fo fo";
+    gap: 10px;
 }
 
 header {
@@ -36,6 +37,17 @@ nav {
 #section_1 {
     grid-area: s1;
     background: rgb(146, 194, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#days {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
 }
 
 #section_2 {
@@ -52,3 +64,4 @@ footer {
     grid-area: fo;
     background: grey;
 }
+
