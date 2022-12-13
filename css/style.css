@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 255, 255);
 }
 
 #grid_wrapper {
@@ -12,35 +17,77 @@
     grid-template-areas: 
     "he he"
     "s1 s2"
-    "s3 s2"
+    "s1 s2"
     "fo fo";
     gap: 10px;
 }
 
 header {
     grid-area: he;
-    background: rgb(186, 175, 175);
+    background: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 2px solid black;
 
 }
 
+h1 {
+    font-family: 'Yrsa', serif;
+    font-size: 3rem;
+}
+
 nav {
-    background: rgb(221, 218, 218);
+    background: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 500px;
 }
 
+.links {
+    font-family: 'Yrsa', serif;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.links:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 #section_1 {
     grid-area: s1;
-    background: rgb(146, 194, 224);
+    background: rgb(117, 174, 117);
+    padding: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+#news {
+    background: white;
+    height: 90%;
+    width: 90%;
+    border: 2px solid black;
+}
+
+#section_2 {
+    grid-area: s2;
+    background: rgb(117, 174, 117);
+}
+
+.section_title {
+    font-size: 1.5rem;
+    font-family: 'Yrsa', serif;
+}
+
+footer {
+    grid-area: fo;
+    background: rgb(255, 255, 255);
+    border-top: 2px solid black;
 }
 
 #days {
@@ -48,20 +95,5 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     height: 70%;
-}
-
-#section_2 {
-    grid-area: s2;
-    background: rgb(122, 122, 151);
-}
-
-#section_3 {
-    grid-area: s3;
-    background: rgb(190, 189, 204);
-}
-
-footer {
-    grid-area: fo;
-    background: grey;
 }
 
