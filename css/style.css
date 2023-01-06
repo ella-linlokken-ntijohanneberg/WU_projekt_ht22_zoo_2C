@@ -75,6 +75,8 @@ nav {
     width: 50%;
     height: 30%;
     border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 #booking_button:hover {
@@ -85,6 +87,8 @@ nav {
     width: 50%;
     height: 30%;
     border: 2px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 #section_2 {
@@ -195,6 +199,19 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.food_card:hover {
+    background: rgb(117, 174, 117);
+    height: 430px;
+    width: 220px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .food_img {
