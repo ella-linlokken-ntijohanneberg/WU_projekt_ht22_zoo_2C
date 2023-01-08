@@ -261,6 +261,8 @@ footer {
     grid-area: fo;
     background: rgb(255, 255, 255);
     border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
 }
 
 #days {
@@ -268,6 +270,10 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     height: 70%;
+}
+
+#img_social_media {
+    height: 30%;
 }
 
 .section_title {
